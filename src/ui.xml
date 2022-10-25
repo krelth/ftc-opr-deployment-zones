@@ -1,0 +1,32 @@
+<Defaults>
+    <Text fontSize="20" color="#ffffff" />
+    <Button fontSize="20"/>
+</Defaults>
+<Panel position="0 0 -14.6" width="776" height="581" color="#000000">
+    <VerticalLayout spacing="20" padding="10">
+        <Text preferredHeight="80">OPR Deployment Zones Spawner</Text>
+        <HorizontalLayout preferredHeight="80">
+            <Button onClick="boardSizeClicked" id="boardSizeBtn">Board size:\n6'x4'</Button>
+            <Button onClick="gameTypeClicked" id="gameTypeBtn">Game type:\nRegular</Button>
+        </HorizontalLayout>
+        <GridLayout constraint="FixedColumnCount" constraintCount="3" cellSize="252 100" id="grid">
+            <Button onClick="applyClicked" id="FrontLine">Front Line</Button>
+            <Button onClick="applyClicked" id="LongHaul">Long Haul</Button>
+            <Button onClick="applyClicked" id="SideBattle">Side Battle</Button>
+            <Button onClick="applyClicked" id="Ambush">Ambush</Button>
+            <Button onClick="applyClicked" id="Spearhead">Spearhead</Button>
+            <Button onClick="applyClicked" id="SpearheadGff" active="false">Spearhead (Skirmish)</Button>
+            <Button onClick="applyClicked" id="FlankAssault">Flank Assault</Button>
+            <Button onClick="applyClicked" id="FlankAssaultGff" active="false">Flank Assault (Skirmish)</Button>
+            <Button onClick="applyClicked" id="Cornered" active="false">Cornered</Button>
+            <Button onClick="applyClicked" id="KitchenFrontline" active="false">Frontline (Kitchen Table)</Button>
+            <Button onClick="applyClicked" id="KitchenSideBattle" active="false">Side Battle (Kitchen Table)</Button>
+            <Button onClick="applyClicked" id="KitchenFlankAssault" active="false">Flank Assault (Kitchen Table)</Button>
+        </GridLayout>
+        <HorizontalLayout spacing="100" preferredHeight="80">
+            <Button onClick="clearClicked" id="clearBtn">Clear</Button>
+            <Button onClick="rotateClicked" id="rotateBtn" interactable="false">Mirror / rotate</Button>
+            <Button onClick="randomClicked">Random</Button>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Panel>

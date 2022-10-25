@@ -1,0 +1,14 @@
+{
+  "name": "tts-ftc-opr-deployment-zones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "blessing",
+  "dependencies": {
+    "hbs-cli": "^1.4.1"
+  }
+}
